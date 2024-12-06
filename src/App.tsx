@@ -131,7 +131,15 @@ function App() {
       </Box>
       {endValue != null ? (
         <Box padding={"10px 0"} flex={"column"} gap={"10px"}>
-          <Typography variant={"h2"} fontSize={100} sx={{}}>
+          <Typography variant={"h2"} sx={{
+                fontSize: {
+                  xs: "2rem", 
+                  sm: "3rem", 
+                  md: "4rem", 
+                  lg: "5rem", },
+                fontWeight: "bold", 
+                textAlign: "center",
+              }}>
             {fromCurrency === "BRL"
               ? currency(endValue, {
                   symbol: "R$",
